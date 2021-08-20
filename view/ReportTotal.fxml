@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="415.0" style="-fx-background-color: #36445c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ReportTotalController">
+   <children>
+      <Label alignment="CENTER" layoutX="11.0" layoutY="29.0" prefHeight="20.0" prefWidth="393.0" text="TOTAL APPOINTMENTS" textFill="WHITE" underline="true">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <GridPane gridLinesVisible="true" layoutX="76.0" layoutY="63.0" prefHeight="313.0" prefWidth="257.0" AnchorPane.bottomAnchor="222.0" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="63.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="125.0" text="J A N U A R Y :" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="F E B R U A R Y :" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="39.0" prefHeight="18.0" prefWidth="125.0" text="M A R C H :" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="18.0" prefWidth="125.0" text="A P R I L :" textFill="WHITE" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="18.0" prefWidth="125.0" text="M A Y :" textFill="WHITE" GridPane.rowIndex="5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="64.0" prefHeight="18.0" prefWidth="125.0" text="J U N E :" textFill="WHITE" GridPane.rowIndex="6" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="90.0" prefHeight="18.0" prefWidth="125.0" text="J U L Y :" textFill="WHITE" GridPane.rowIndex="7" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="115.0" prefHeight="18.0" prefWidth="125.0" text="A U G U S T :" textFill="WHITE" GridPane.rowIndex="8" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="39.0" prefHeight="18.0" prefWidth="125.0" text="S E P T E M B E R :" textFill="WHITE" GridPane.rowIndex="9" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="O C T O B E R :" textFill="WHITE" GridPane.rowIndex="10" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="268.0" prefHeight="18.0" prefWidth="125.0" text="N O V E M B E R :" textFill="WHITE" GridPane.rowIndex="11" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="D E C E M B E R :" textFill="WHITE" GridPane.rowIndex="12" />
+            <Label fx:id="jan" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="39.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="feb" alignment="CENTER" contentDisplay="CENTER" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="mar" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="39.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <Label fx:id="apr" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="39.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label fx:id="may" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="39.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Label fx:id="jun" alignment="CENTER" contentDisplay="CENTER" layoutX="138.0" layoutY="39.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label fx:id="aug" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="sep" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label fx:id="oct" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Label fx:id="nov" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Label fx:id="dec" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="39.0" prefHeight="18.0" prefWidth="125.0" text="M O N T H" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="# APPT TOTAL" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="jul" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="208.0" prefHeight="19.0" prefWidth="86.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+         </children>
+      </GridPane>
+      <GridPane gridLinesVisible="true" layoutX="76.0" layoutY="422.0" prefHeight="122.0" prefWidth="258.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="INFORMAL" textFill="WHITE" GridPane.rowIndex="1" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="125.0" text="FORMAL" textFill="WHITE" GridPane.rowIndex="2" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="18.0" prefWidth="125.0" text="BOARD" textFill="WHITE" GridPane.rowIndex="3" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="13.0" prefHeight="18.0" prefWidth="125.0" text="ANNUAL" textFill="WHITE" GridPane.rowIndex="4" />
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="125.0" text="T Y P E" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="125.0" text="# APPT TOTAL" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <Label fx:id="informal" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="37.0" prefHeight="18.0" prefWidth="125.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="formal" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="37.0" prefHeight="18.0" prefWidth="125.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="board" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="62.0" prefHeight="18.0" prefWidth="125.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="annual" alignment="CENTER" contentDisplay="CENTER" layoutX="139.0" layoutY="86.0" prefHeight="18.0" prefWidth="125.0" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

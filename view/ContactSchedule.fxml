@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="1000.0" style="-fx-background-color: #36445c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ContactScheduleController">
+   <children>
+      <Group layoutX="139.0" layoutY="68.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionFirst" text="Frosty Snowman" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="first" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="138.0" mnemonicParsing="false" onAction="#onActionSecond" text="Yuna Spira" textFill="WHITE" toggleGroup="$first" />
+            <RadioButton layoutX="250.0" mnemonicParsing="false" onAction="#onActionThird" text="Bruce Wayne" textFill="WHITE" toggleGroup="$first" />
+         </children>
+      </Group>
+      <Label alignment="CENTER" layoutX="268.0" layoutY="528.0" prefHeight="55.0" prefWidth="458.0" text="Select Contact to Generate Schedule Report" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="appTable" layoutX="38.0" layoutY="104.0" prefHeight="414.0" prefWidth="930.0" style="-fx-background-color: #97a3b8;">
+         <columns>
+            <TableColumn fx:id="appID" prefWidth="44.0" text="AID" />
+            <TableColumn fx:id="appTitle" prefWidth="104.80001831054688" text="TITLE" />
+            <TableColumn fx:id="appType" prefWidth="124.800048828125" text="TYPE" />
+            <TableColumn fx:id="appDescription" prefWidth="252.7999267578125" text="DESCRIPTION" />
+            <TableColumn fx:id="appStart" prefWidth="158.39990234375" text="START" />
+            <TableColumn fx:id="appEnd" minWidth="1.5999755859375" prefWidth="156.800048828125" text="END" />
+            <TableColumn fx:id="customerID" minWidth="0.0" prefWidth="88.8001708984375" text="Customer ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

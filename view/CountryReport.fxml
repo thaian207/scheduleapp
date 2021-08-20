@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="782.0" style="-fx-background-color: #36445c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.CountryReportController">
+   <children>
+      <Group layoutX="139.0" layoutY="68.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionFirst" text="United States" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="first" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="138.0" mnemonicParsing="false" onAction="#onActionSecond" text="Canada" textFill="WHITE" toggleGroup="$first" />
+            <RadioButton layoutX="250.0" mnemonicParsing="false" onAction="#onActionThird" text="United Kingdom" textFill="WHITE" toggleGroup="$first" />
+         </children>
+      </Group>
+      <Label alignment="CENTER" layoutX="162.0" layoutY="528.0" prefHeight="55.0" prefWidth="458.0" text="Select Country to Generate Report" textFill="WHITE">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="countryTable" layoutX="38.0" layoutY="104.0" prefHeight="414.0" prefWidth="713.0" style="-fx-background-color: #97a3b8;">
+         <columns>
+            <TableColumn fx:id="customerID" prefWidth="89.60000610351562" text="Customer ID" />
+            <TableColumn fx:id="customerName" prefWidth="124.79998779296875" text="Customer Name" />
+            <TableColumn fx:id="customerPhone" prefWidth="93.59999084472656" text="Phone" />
+            <TableColumn fx:id="customerAddress" prefWidth="211.199951171875" text="Address" />
+            <TableColumn fx:id="customerPostal" prefWidth="72.7999267578125" text="Postal" />
+            <TableColumn fx:id="customerDiv" prefWidth="119.99996337890627" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

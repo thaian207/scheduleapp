@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" style="-fx-background-color: #36445c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.AppointmentController">
+   <children>
+      <TableView fx:id="appTable" layoutX="235.0" layoutY="18.0" prefHeight="554.0" prefWidth="751.0" style="-fx-background-color: #97a3b8;">
+        <columns>
+          <TableColumn fx:id="appID" prefWidth="33.5999755859375" text="AID" />
+          <TableColumn fx:id="appTitle" prefWidth="85.5999755859375" text="TITLE" />
+            <TableColumn fx:id="appDescription" prefWidth="181.60009765625" text="DESCRIPTION" />
+            <TableColumn fx:id="appLocation" prefWidth="78.4000244140625" text="LOCATION" />
+            <TableColumn fx:id="appContact" prefWidth="95.2000732421875" text="CONTACT" />
+            <TableColumn fx:id="appType" prefWidth="77.5999755859375" text="TYPE" />
+            <TableColumn fx:id="appDate" prefWidth="79.199951171875" text="DATE" />
+            <TableColumn fx:id="appStart" prefWidth="56.0" text="START TIME" />
+            <TableColumn fx:id="appEnd" prefWidth="62.4000244140625" text="END TIME" />
+            <TableColumn fx:id="customerID" prefWidth="66.40008544921875" text="CID" />
+            <TableColumn fx:id="userID" prefWidth="49.599853515625" text="UID" />
+        </columns>
+      </TableView>
+      <TextField fx:id="IDTxt" disable="true" layoutX="20.0" layoutY="18.0" prefHeight="1.0" prefWidth="94.0" text="Appt ID:" visible="false" />
+      <Label layoutX="38.0" layoutY="46.0" text="TITLE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleTxt" layoutX="21.0" layoutY="59.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="39.0" layoutY="90.0" text="DESCRIPTION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="descTxt" layoutX="21.0" layoutY="103.0" prefHeight="22.0" prefWidth="190.0" />
+      <Label layoutX="38.0" layoutY="131.0" text="LOCATION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="locationTxt" layoutX="21.0" layoutY="144.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="41.0" layoutY="173.0" text="TYPE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="datePicker" layoutX="22.0" layoutY="229.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="37.0" layoutY="262.0" text="START TIME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="startComboBox" layoutX="22.0" layoutY="275.0" prefHeight="16.0" prefWidth="190.0" />
+      <Label layoutX="39.0" layoutY="308.0" text="END TIME" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="endComboBox" layoutX="22.0" layoutY="321.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="34.0" layoutY="353.0" text="CONTACT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+         <effect>
+            <DropShadow height="18.62" offsetX="10.0" offsetY="10.0" radius="9.405000000000001" spread="0.16" />
+         </effect>
+      </Label>
+      <ComboBox fx:id="contactComboBox" layoutX="22.0" layoutY="366.0" prefHeight="26.0" prefWidth="190.0" />
+      <Label fx:id="warningTxt" layoutX="10.0" layoutY="444.0" prefHeight="54.0" prefWidth="210.0" textFill="RED" />
+      <Label layoutX="25.0" layoutY="401.0" text="CUSTOMER ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <TextField fx:id="customerIDTxt" layoutX="23.0" layoutY="414.0" prefHeight="26.0" prefWidth="86.0" />
+      <TextField fx:id="userIDTxt" layoutX="125.0" layoutY="413.0" prefHeight="26.0" prefWidth="85.0" />
+      <Button fx:id="addButton" layoutX="57.0" layoutY="497.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #196151;" text="A D D" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="menuButton" layoutX="57.0" layoutY="609.0" mnemonicParsing="false" onAction="#menuOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #e96151;" text="M E N U" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="modButton" layoutX="57.0" layoutY="530.0" mnemonicParsing="false" onAction="#modOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #196151;" text="M O D I F Y" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteButton" layoutX="57.0" layoutY="568.0" mnemonicParsing="false" onAction="#deleteOnAction" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: #196151;" text="D E L E T E" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButton" layoutX="28.0" layoutY="486.0" mnemonicParsing="false" onAction="#setSaveButton" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #196151;" text="S A V E" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="124.0" layoutY="486.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="26.0" prefWidth="74.0" style="-fx-background-color: #e96151;" text="CANCEL" textFill="WHITE" visible="false">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="131.0" layoutY="400.0" text="USER ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="216.0" text="DATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Group layoutX="311.0" layoutY="600.0">
+         <children>
+            <RadioButton mnemonicParsing="false" onAction="#onActionAll" selected="true" text="All Appointments" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="All" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton layoutX="511.0" mnemonicParsing="false" onAction="#onActionWeekly" text="Weekly Appointments" textFill="WHITE" toggleGroup="$All" />
+            <RadioButton layoutX="244.0" mnemonicParsing="false" onAction="#onActionMonthly" text="Monthly Appointments" textFill="WHITE" toggleGroup="$All" />
+         </children>
+      </Group>
+      <ComboBox fx:id="typeComboBox" layoutX="21.0" layoutY="186.0" prefHeight="26.0" prefWidth="190.0" />
+   </children>
+</AnchorPane>
